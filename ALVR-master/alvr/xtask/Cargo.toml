@@ -1,0 +1,17 @@
+[package]
+name = 'alvr_xtask'
+version = '0.1.0'
+authors = ['Riccardo Zaglia <riccardo.zaglia5@gmail.com>']
+license = 'MIT'
+edition = '2018'
+
+[dependencies]
+dirs = '^3.0'
+fs_extra = '^1.1'
+pico-args = '^0.3.1'
+runas = '^0.2.1'
+walkdir = '^2.3'
+zip = '^0.5.5'
+
+[target.'cfg(not(windows))'.dependencies]
+termion = '^1.5'
